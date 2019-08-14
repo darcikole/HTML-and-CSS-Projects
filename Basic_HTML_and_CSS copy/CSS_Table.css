@@ -1,0 +1,15 @@
+table {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+tr, th {
+    border: 1px solid black;
+    background-color: antiquewhite;
+}
+td {
+    color: #333333;
+}
+td:hover {
+    color: maroon;
+    background-color: white;
+    }
