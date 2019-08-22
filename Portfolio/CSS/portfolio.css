@@ -1,0 +1,241 @@
+/* ----- BODY ----- */
+body {
+    margin: 0%; /* full screen */
+}
+
+
+/* ----- NAVBAR ----- */
+.Navbar {
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0%; /*navbar positioned at very top with no margins*/
+    width: 100%;
+    z-index: 1; /* keeps navbar on top of all elements */
+}
+
+/* ----- NAVBAR TEXT ----- */
+.Navbar a {
+    float: left;
+    display: block;
+    color: white;
+    padding: 24px 16px;
+    text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+/* ----- NAVBAR HOVER EFFECT ----- */
+.Navbar a:hover {
+    background-color: #F4F4F4;
+    color: black;
+    font-weight: bold;
+}
+
+/* ----- NAVBAR ACTIVE SELECTION ----- */
+.Navbar a.active {
+    background-color: #a8d3e3;
+}
+
+/* ----- VIDEO ----- */
+#Computer_Keyboard_Video {
+   position: fixed;                                         
+    right: 0;
+    bottom: 0;
+    min-width: 100%; /* full screen width */
+    z-index: -1;  /* keeps video in background if fixed position */
+}
+
+/* ----- TEXT OVER VIDEO ----- */
+.Video_Text {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    margin-top: 25%;
+}
+
+.Video_Text h1 {
+    color: white;
+    text-shadow: 2px 2px 4px #333333;
+    letter-spacing: .5px;
+    word-spacing: 5px;
+}
+
+.Video_Text p:hover {
+    transition: 1s;
+    transform: scale(1.25);   
+}
+
+/* ----- QUOTE STYLING ----- */
+q {
+    font-style: italic;
+    font-weight: bold;
+}
+
+/* ----- COLUMNS STYLING ----- */
+* {
+    box-sizing: border-box;
+}
+
+.Column_1 {
+    float: left;
+    width: 50%;
+    padding: 70px;
+    padding-top: 1%;
+    height: 400px;
+    background-color: #f2f2f2;
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #a8d3e3;                 
+}
+
+.Column_3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #a8d3e3;                  
+}
+
+.Row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ----- IMAGE STYLING ----- */
+img {
+    /*filter: grayscale(75%);*/
+    border-radius: 8px;
+    max-width: 100%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+/* ----- IMAGE :HOVER ----- */
+img:hover {
+    filter: grayscale(0%); /* brings back img color */
+    border:2px solid #333333;
+    box-shadow: 5px 5px 5px 3px #333;
+    transition: 1s;
+    transform: scale(1.1)
+    
+}
+
+/* ----- HEADING 1 STYLING ----- */
+h1 {
+    text-transform: uppercase;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: center;
+    margin-top: 1%;
+    color: #222222;
+    letter-spacing: .5px;
+}
+
+
+
+/* ----- HEADING 1 :HOVER ----- */
+.Row h1:hover {
+    text-decoration: underline;
+}
+
+/* ----- PARAGRAPH STYLING ----- */
+.Row p {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+    letter-spacing: .5px;
+
+}
+
+#Github p {
+    margin-top: 20%;
+}
+
+/* ----- ANCHOR STYLING ----- */
+.Row a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ----- ANCHOR HOVER STYLING ----- */
+
+.Row a:hover {
+    color: #FF003F;
+}
+
+/* ----- CONTACT INPUT STYLING ----- */
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Source Sans Pro', sans-serif; 
+}
+
+/* ----- CONTACT FORM STYLING ----- */
+form {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f2f2f2;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* ----- SUBMIT BUTTON STYLING ----- */
+input[type=submit] {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Sourse Sans Pro', sans-serif;
+}
+
+/* ----- SUBMIT BUTTON :HOVER STYLING ----- */
+input[type=submit]:hover {
+    background-color: #a8d3e3;
+    color: black;
+    font-weight: bolder;
+}
+
+/* ----- FOOTER STYLING ----- */
+footer {
+    padding: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+

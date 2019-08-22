@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+    <head>
+        <meta charset="utf-8">
+        <title>Darci Kole</title>
+        <link rel="stylesheet" href="CSS/portfolio.css">
+    </head>
+
+<!-- BODY-->
+    <body class="background">
+
+<!-- NAVBAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Github">Github</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+<!-- HOME -->
+        <br> <!-- Breaks to add space between navbar and first heading -->
+        <br>
+
+<!-- VIDEO -->     <!-- ?? MAYBE USE HEADER OR CONTAINER INSTEAD OF FULL BACKGROUND IN BODY ?? -->
+        <div id="Home">
+            <video autoplay muted loop id="Computer_Keyboard_Video">
+                <source src="CSS/Video/Computer Keyboard - 3174.mp4" type="video/mp4">
+                Your browser does not support HTML5 video. <!-- Display message if video fails to run -->
+            </video>
+        </div>
+
+<!-- VIDEO TEXT -->
+        <div class="Video_Text">
+            <h1>Darci Kole's Portfolio</h1>
+                <p>               
+                    <q>When you don't create things, you become defined by your tastes rather than ability. Your tastes only narrow & exclude people. So create.
+                    </q>
+                    <br>-Why The Lucky Stiff<br>
+                    <br>
+                                     
+                </p>
+        </div>
+
+<!-- ABOUT SECTION -->
+        <div class="Row" id="About">
+            <div class="Column_2"> <!-- Left column -->
+                <img src="CSS/Images/computer-1209641_1920.jpg" alt="Coding">
+            </div>
+
+            <div class="Column_1"> <!-- Right column -->
+                <h1>About</h1>
+                    <p> My name is Darci Kole.  I am a software developer who loves to     code and create!  As a mother, I enjoy time with my family.  I     also enjoy traveling, reading, and am a wine enthusiast.           <br><br>
+                        I am a graduate of <a href="https://www.learningcodeanywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. <br><br>
+                        I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    </p>
+            </div>
+        </div>
+
+<!-- GITHUB SECTION -->
+        <div class="Row" id="Github">
+            <div class="Column_1"> <!-- Left column-->
+            <h1>GitHub</h1>
+            <p>You can view my coding projects on my GitHub profile here:
+            <a class="git_acct" href="https://github.com/darcikole" target="_blank">Darci Kole GitHub</a><br><br>
+            Or check out the links below: <br> <br>
+            <a href="https://www.seattlewinebuzz.com/" target="_blank">SeattleWineBuzz.com</a>
+            </p>
+            </div>
+
+            <div class="Column_2"> <!-- Right column -->
+                <a href="https://github.com/darcikole" target="_blank"><img src="CSS/Images/GitHub.png" alt="GitHub"></a>
+            </div>
+
+        </div>
+
+<!-- CONTACT SECTION -->
+        <div class="Row" id="Contact">
+            <div class="Column_3"> <!-- Contact image, left column -->
+                <img src="CSS/Images/Contact.jpg" alt="Contact_Image">
+            </div>
+
+            <div class="Column_1"> <!-- Contact form, right column -->
+                <h1>Contact</h1>
+                    <form action="" method="GET"> <!-- This specifies where to send the form data and how; it's left blank-->
+                        <label for="name">Name:</label>
+                            <input type="text" placeholder="Please enter your name here">
+                        <label for="email">Email:</label>
+                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <label for="message">Message:</label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                            <input type="submit" value="Submit">
+                    </form>
+            </div>
+        </div>
+
+<!-- FOOTER SECTION -->
+        <footer>
+            <p>&copy; 2019 &nbsp;|&nbsp; Darci Kole Development, LLC &nbsp;| &nbsp;Seattle, WA</p>
+        </footer>
+    
+    </body>
+
+</html>
