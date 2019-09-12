@@ -3,6 +3,8 @@
  <head>
      <title>Dog Walking Service</title>
      <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="CSS/one_page_website.css">
  </head>   
  <header>
 <!--HEADER IMAGE-->
@@ -72,11 +74,13 @@
                     </table>
                     </section>
             </div>
+            
+             
          
 <!--END ABOUT US-->
 
 <!--SIGNUP-->
-         <section>
+         <section id="contact_form">
          <div id="contact">
              <div>
                  <h3>Contact Us</h3>
@@ -94,46 +98,73 @@
 <!--END SIGNUP-->
 
 <!--PHOTOS-->
-         <section>
-             <div id="pics">
+         <section id="photos">
                  <div>
                      <h3>Our Photos</h3>
                  </div>
-                    <div>
-            <!-- Photo 1-->
-            <div>
-                <div>
-                    <img src="/Users/Darci/Desktop/One-Page Website/images/thumbnail_1.jpeg" alt="small dogs on leashes">
-                </div>
-            </div>
-            <!-- End Photo 1-->
-
-            <!-- Photo 2-->
-            <div>
-                <div>
-                    <img src="/Users/Darci/Desktop/One-Page Website/images/thumbnail_2.jpg" alt="group of dogs">
-                </div>
-            </div>
-            <!-- End Photo 2-->
-
-            <!-- Photo 3-->
-            <div>
-                <div>
-                    <img src="/Users/Darci/Desktop/One-Page Website/images/thumbnail_3.jpg" alt="poodle">
-                </div>
-            </div>
-            <!-- End Photo 3-->
-
-            <!-- Photo 4-->
-            <div>
-                <div>
-                    <img src="/Users/Darci/Desktop/One-Page Website/images/thumbnail_4.jpg" alt="Maltese">
-                </div>
-            </div>
-            <!-- End Photo 4-->
+            
+                 <div class="row">
+                    <div class="column">
+                      <img src="images/thumbnail_1.jpeg" style="width:100%" alt="dogs on leashes" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
                     </div>
-
-             </div>
+                    <div class="column">
+                      <img src="images/thumbnail_2.jpg" style="width:100%" alt="group of dogs" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                      <img src="images/thumbnail_3.jpg" style="width:100%" alt="Corgie" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+                    </div>
+                    <div class="column">
+                      <img src="images/thumbnail_4.jpg" style="width:100%" alt="Rottweiler" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+                    </div>
+                  </div>
+                  
+                  <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="images/thumbnail_1.jpeg" alt="dogs on leashes" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="images/thumbnail_2.jpg" alt="group of dogs" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="images/thumbnail_3.jpg" alt="Corgie" style="width:100%">
+                      </div>
+                      
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="images/thumbnail_4.jpg" alt="Rottweiler" style="width:100%">
+                      </div>
+                      
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                  
+                  
+                      <div class="column">
+                        <img class="demo cursor" src="images/thumbnail_1.jpeg" alt="dogs on leashes" style="width:100%" onclick="currentSlide(1)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/thumbnail_2.jpg" alt="group of dogs" style="width:100%" onclick="currentSlide(2)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/thumbnail_3.jpg" alt="Corgie" style="width:100%" onclick="currentSlide(3)">
+                      </div>
+                      <div class="column">
+                        <img class="demo cursor" src="images/thumbnail_4.jpg" alt="Rottweiler" style="width:100%" onclick="currentSlide(4)">
+                      </div>
+                    </div>
+                  </div>
+                        
          </section>
 <!--END PHOTOS-->
 
@@ -154,6 +185,7 @@
              </div>
          </section>
      </div>
+     <script src="JS/one_page-website.js"></script>
  </body>
 
  <footer>
