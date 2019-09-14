@@ -262,7 +262,13 @@
     $('.popover-dismiss').popover({
           trigger: 'focus'
         })
-</script>
+    </script>
+    <script>document.body.className += 'fade-out';</script>
+    <script>
+      $(function() {
+        $('body').removeClass('fade-out');
+      });
+    </script>
 
   </body>
 </html>
